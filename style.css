@@ -14,7 +14,6 @@ body {
 .brand-title {
   font-size: 1.5em;
   color: white;
-  justify-content: right;
 }
 
 .navbar-links {
@@ -77,7 +76,7 @@ body {
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgb(255, 251, 251);
+    background-color: #333;
     padding: 20px;
     height: 100vh;
   }
@@ -117,14 +116,16 @@ body {
   height: 470px;
 }
 
-contact-card {
-  border: 1px solid;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  text-align: center;
+.contact-card {
+  background-color: #fff;
+  background-color: #2d3e8b;
+
+  padding: 70px;
+  height: 330px;
+  box-shadow: 0 4px 2px rgb(248, 248, 248);
+
   width: 300px;
-  font-size: 50px;
+  font-size: 20px;
 }
 
 .contact-card h1 {
@@ -146,23 +147,46 @@ contact-card {
   font-weight: bold;
   font-size: 20px;
 }
+@media (max-width: 420px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .profile-pic,
+  .contact-card {
+    flex: none;
+    border-radius: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .contact-card {
+    padding: 10px;
+  }
+}
 
 .social-media {
+  background-color: rgb(24, 24, 77);
   display: flex;
+  justify-content: center;
   bottom: 0;
   left: 0;
   bottom: 0;
   right: 0;
   top: 0;
-  margin-top: 20px;
-  background-color: rgb(24, 24, 77);
+  margin-top: -200px;
+
+  padding: 30px;
 }
 
 .social-media a {
-  margin-right: 10px;
+  text-align: center;
+  justify-content: space-between;
+  margin-right: 15px;
 }
 
 .social-media img {
+  justify-content: space-between;
+  text-align: center;
   width: 24px;
   height: 24px;
 }
@@ -242,21 +266,21 @@ contact-card {
   margin: 0;
 }
 .skills-container {
-  padding: 5px;
-  width: 50%;
+  padding: 40px;
+  width: 60%;
   text-align: center;
 }
 h1 {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 10fr);
-  gap: 100px;
+  gap: 70px;
 }
 .skill {
   background-color: rgba(12, 27, 91, 0.886);
-  padding: 30px;
+  padding: 40px;
 }
 .connect {
   font-family: Arial, sans-serif;
