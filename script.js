@@ -18,7 +18,7 @@ document.addEventListener("DOMContentLoaded", () => {
   dob.textContent = "March 13th, 2004";
 });
 document
-  .getElementById("contactForm")
+  .getElementById("contact-form")
   .addEventListener("submit", function (event) {
     event.preventDefault();
     alert("Form submitted!");
