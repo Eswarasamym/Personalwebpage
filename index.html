@@ -7,84 +7,56 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="brand-title">Brand</div>
-      <a
-        href="javascript:void(0);"
-        class="toggle-button"
-        onclick="toggleMenu()"
-      >
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-        <a
-          href="javascript:void(0);"
-          class="close-button"
-          onclick="toggleMenu()"
-          >&#10006;</a
-        >
-      </div>
+    <div class="im">
+      <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <nav>
+      <div class="logo">Brand</div>
+      <input type="checkbox" id="click" />
+      <label for="click" class="menu-btn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <ul>
+        <li><a class="active" href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
     </nav>
+  </div>
     <br />
     <br />
-    <br />
-    <br />
-
-    <div class="container">
-      <div class="card">
-        <div class="containers">
-          <div class="image">
-            <img src="Asset/Eswarsamy.jpg" alt="Profile Image" />
-          </div>
-          <div class="info">
-            <h1>Rachel Smith</h1>
-            <h2>LAWYER & CONSULTANT</h2>
-            <p><strong>Phone:</strong> <br />123-456-7890</p>
-            <p><strong>Email:</strong> <br />info@mysite.com</p>
-            <p>
-              <strong>Address:</strong> <br />500 Terry Francine Street, San
-              Francisco, CA 94158
-            </p>
-            <p>
-              <strong>Date of Birth:</strong><br />
-              March 14th, 1984
-            </p>
-          </div>
-        </div>
-
-        <div class="social-icons">
-          <a
-            href="https://www.linkedin.com/in/eswarasamy-m-9b4113277?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbyduFKFTRJGizRioMi5R8Q%3D%3D"
-            ><i class="fab fa-linkedin"><img src="Asset/Linkedin.webp" /></i
-          ></a>
-          <a href="https://www.facebook.com/profile.php?id=61556349569597"
-            ><i class="fab fa-facebook"><img src="Asset/facebook.webp"</i>
-          </a>
-
-          <a href="https://www.instagram.com/_hashtag_eswar/"
-            ><i class="fab fa-instagram"><img src="Asset/insta.webp"</i>
-
-            <a href="https://github.com/Eswarasamym"
-              ><i class="fab fa-Github"><img src="Asset/Github.webp" </i></a
-            >
-          </a>
-        </div>
+    <div class="img">
+    <div class="profile-card">
+      <div class="profile-image">
+          <img src="Asset/Eswarsamy.jpg" alt="Rachel Smith">
       </div>
-    </div>
+      <div class="profile-info">
+          <h1>Rachel Smith</h1>
+          <h2>LAWYER & CONSULTANT</h2>
+          <p><strong>Phone:</strong> 123-456-7890</p>
+          <p><strong>Email:</strong> info@mysite.com</p>
+          <p><strong>Address:</strong> 500 Terry Francine Street<br> San Francisco, CA 94158</p>
+          <p><strong>Date of Birth:</strong> March 14th, 1984</p>
+      </div>
+  </div>
+</div>
+  <div class="social-media">
+      <a href="#"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+      <a href="#"><img src="facebook-icon.png" alt="Facebook"></a>
+      <a href="#"><img src="twitter-icon.png" alt="Twitter"></a>
+      <a href="#"><img src="instagram-icon.png" alt="Instagram"></a>
+  </div>
+  
     <br />
     <br />
     <br />
     <br />
     <div class="timeline">
-      <div class="education-title">EDUCTION</div>
+      <div class="education-title"><b>EDUCTION</b></div>
       <br />
       <br />
       <br />
@@ -115,20 +87,20 @@
         </div>
       </div>
     </div>
-    <div class="skills_title">SKILLS</div>
-
-    <div class="skills">
-      <div>Microsoft Excel - Advanced</div>
-      <div>Adobe - Proficient</div>
-      <div>Microsoft Word - Advanced</div>
-      <div>French - Mother Tongue</div>
-      <div>PowerPoint - Proficient</div>
-      <div>Spanish - Advanced</div>
+    <div class="skill">
+      <div class="skills-section">
+        <div class="skills-header">SKILLS</div>
+        <div class="skills-container">
+          <div class="skill-box">Microsoft Excel - Advanced</div>
+          <div class="skill-box">Adobe - Proficient</div>
+          <div class="skill-box">Microsoft Word - Advanced</div>
+          <div class="skill-box">French - Mother Tongue</div>
+          <div class="skill-box">PowerPoint - Proficient</div>
+          <div class="skill-box">Spanish - Advanced</div>
+        </div>
+      </div>
     </div>
-    <script
-      src="https://kit.fontawesome.com/a076d05399.js"
-      crossorigin="anonymous"
-    ></script>
+
     <div class="timeline">
       <h1>EXPERIENCE</h1>
       <div class="timeline-item">
@@ -196,5 +168,5 @@
         </div>
       </div>
     </div>
-  </body>
+  </div>
 </html>
