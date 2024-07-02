@@ -1,11 +1,5 @@
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
-
-/* Navbar */
 @import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
-.im {
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -58,12 +52,12 @@ nav .menu-btn i {
 input[type="checkbox"] {
   display: none;
 }
-@media (max-width: 480px) {
+@media (max-width: 1000px) {
   nav {
     padding: 0 40px 0 50px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 920px) {
   nav .menu-btn i {
     display: block;
   }
@@ -74,7 +68,7 @@ input[type="checkbox"] {
     position: fixed;
     top: 80px;
     left: -100%;
-    background: #fff;
+    background: #111;
     height: 100vh;
     width: 100%;
     text-align: center;
@@ -89,7 +83,6 @@ input[type="checkbox"] {
     margin: 40px 0;
   }
   nav ul li a {
-    color: black;
     width: 100%;
     margin-left: -100%;
     display: block;
@@ -137,6 +130,8 @@ input[type="checkbox"] {
   display: flex;
   flex-wrap: wrap;
   border: 1px solid #ddd;
+  animation: fadeIn 6s ease-in-out;
+  flex-direction: row;
 }
 
 .profile-image img {
@@ -150,6 +145,11 @@ input[type="checkbox"] {
   background-color: white;
   width: 50px;
   box-sizing: border-box;
+}
+.profile-info a {
+  text-decoration: none;
+  color: #111;
+  font-size: 1rem;
 }
 
 .profile-info h1 {
@@ -172,6 +172,7 @@ input[type="checkbox"] {
   width: 100%;
   text-align: center;
   padding: 30px 0;
+  animation: fadeIn 2s ease-in-out;
 }
 
 .social-media a {
@@ -181,6 +182,16 @@ input[type="checkbox"] {
 .social-media img {
   width: 30px;
   height: 30px;
+  transition: transform 0.3s;
+}
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Media Queries */
@@ -211,6 +222,7 @@ input[type="checkbox"] {
   width: 60%;
   margin: 0 auto;
   position: relative;
+  animation: fadeIn 5s ease-in-out;
 }
 .education-title {
   text-align: center;
@@ -238,7 +250,8 @@ input[type="checkbox"] {
 }
 
 .timeline-content h2,
-.timeline-content h3 {
+.timeline-content h3,
+.timeline-content h1 {
   margin: 0 0 10px;
 }
 
@@ -249,6 +262,14 @@ input[type="checkbox"] {
 
 .timeline-content p {
   margin: 0;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 480px) {
@@ -271,54 +292,92 @@ input[type="checkbox"] {
 
 /* Skills */
 .skill {
-  background-color: #1e2a52;
   font-family: Arial, sans-serif;
-}
-
-.skills-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-.skills-header {
-  color: white;
-  font-size: 24px;
-  margin-bottom: 20px;
+  margin: 0;
+  padding: 0;
+  background-color: #1c305c;
+  color: #fff;
 }
 
 .skills-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  width: 50%;
-}
-
-.skill-box {
-  background-color: rgba(255, 255, 255, 0.1);
+  width: 80%;
+  margin: 0 auto;
   padding: 20px;
   text-align: center;
-  color: white;
-  font-size: 18px;
-  border-radius: 10px;
+}
+
+.skills-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  animation: slideUp 2s ease-in-out;
+}
+
+.skills-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 calc(33.333% - 40px);
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-container {
+    width: 90%;
+  }
+
+  .skills-item {
+    flex: 1 1 calc(50% - 40px);
+  }
 }
 
 @media (max-width: 480px) {
-  .skills-container {
-    grid-template-columns: 1fr;
-    width: 80%;
+  .skills-item {
+    flex: 1 1 100%;
   }
 }
 
 /* Connect Section */
+.Form_title {
+  text-align: center;
+  font-size: 25px;
+  background-color: white;
+}
 .connect {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: flex-end;
-  background-color: #f0f0f0;
   padding: 20px;
   flex-wrap: wrap;
+  animation: fadeIn 5s ease-in-out;
 }
 
 .form-container,
@@ -326,8 +385,6 @@ input[type="checkbox"] {
   flex: 1;
   background-color: white;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 15px;
   justify-content: space-around;
   align-items: flex-end;
@@ -364,7 +421,7 @@ button:hover {
 }
 
 .info-container {
-  padding: 118px;
+  padding: 169px;
 }
 
 .info-container h2 {
@@ -385,6 +442,16 @@ button:hover {
   width: 24px;
   height: 24px;
 }
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
 @media (max-width: 480px) {
   .container {
@@ -397,8 +464,8 @@ button:hover {
     margin: 10px 0;
   }
   .info-container {
-    text-align: center;
-    justify-content: center;
+    text-align: left;
+    justify-content: left;
   }
   .input-group label {
     font-size: 14px;
@@ -417,6 +484,6 @@ button:hover {
   .social-icon {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
   }
 }
