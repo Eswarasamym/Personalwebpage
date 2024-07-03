@@ -17,9 +17,3 @@ document.addEventListener("DOMContentLoaded", () => {
   address.textContent = "500 Terry Francine Street, San Francisco, CA 94158";
   dob.textContent = "March 13th, 2004";
 });
-document
-  .getElementById("contact-form")
-  .addEventListener("submit", function (event) {
-    event.preventDefault();
-    alert("Form submitted!");
-  });
