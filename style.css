@@ -160,6 +160,7 @@ input[type="checkbox"] {
   background-color: white;
   width: 50px;
   box-sizing: border-box;
+  font-size: 15px;
 }
 .profile-info a {
   justify-content: space-around;
@@ -514,6 +515,6 @@ input[type="checkbox"] {
   .social-icon {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
